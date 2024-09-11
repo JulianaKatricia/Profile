@@ -1,0 +1,248 @@
+body{
+    background-color: #fff9f7;
+    font-size: 1rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg{
+    background-image: url("./assets/pink-bg.png");
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.section1{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20%;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section-title h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: fit-content;
+    color: #ad243b;
+    font-family: "Noto Serif", Tofu;
+    font-weight: 550;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 30px;
+}
+
+.section-title img{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.section1 img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.name-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ad243b;
+}
+
+.name-container>h1{
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 5rem;
+    color: #ad243b;
+    margin: 0px;
+}
+
+.name-container img{
+    width: 50px;
+}
+
+.paragraph{
+    text-align: center;
+    background-color: #f4dbe2;
+    padding: 1% 5%;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #363636;
+}
+
+.skill-list>ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list>ul>li{
+    margin-right: 20px;
+    background-color: #f4dbe2;
+    padding: 1% 5%;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #363636;
+}
+
+.skill-list>ul>li:last-child{
+    margin-right: 0px;
+}
+
+.skill-list>ul>li>svg{
+    margin: 10px 0;
+}
+.skill-list>ul>li>h3{
+    margin: 0;
+}
+.skill-list>ul>li>p{
+    margin-top: 10px;
+}
+
+#contact{
+    margin-top: 50px;
+}
+
+#contact>.container>p,.button{
+    text-align: center;;
+    padding: 1% 5%;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #363636;
+}
+
+button{
+    all: unset;
+}
+
+.button{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    width: 130px;
+    margin: 0 auto;
+    background-color: #ad243b;
+    color: white;
+    border-radius: 30px;
+    transition: fill 0.3s;
+}
+.button:hover{
+    background: #ad243b8f;
+    color: #363636;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #f4c1cb;
+    padding: 5px 0;
+    margin-top: 50px;
+}
+
+.socials>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.socials li{
+    margin-right: 20px;
+}
+
+.socials li:last-child{
+    margin-right: 0;
+}
+
+footer svg{
+    fill: #ad243b;
+    margin: 5px;
+}
+
+footer svg:hover{
+    fill: #fff9f7;
+}
+
+.copyright{
+    color: #ad243b;
+    text-align: center;
+}
+
+.development-note {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #ad243b;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .section1 {
+      flex-direction: column;
+      height: 100%;
+      gap: 10px;
+    }
+    .section1>img{
+        width: 200px;
+        margin-top: 30px;
+    }
+    .name-container>h1{
+        font-size: 3rem;
+    }
+    .skill-list>ul{
+        display: block;
+    }
+    .skill-list>ul>li{
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+    .skill-list>ul>li:last-child{
+        margin-bottom: 0;
+    }
+    .paragraph{
+        font-size: 15px;
+    }
+    .skill-list>ul>li{
+        font-size: 15px;
+    }
+    .section-title>h2{
+        font-size: 20px;
+    }
+    .section-title img{
+        height: 20px;
+    }
+  }
